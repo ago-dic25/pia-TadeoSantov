@@ -1,0 +1,29 @@
+{
+  "name": "bitesua-home-bakery",
+  "version": "1.0.0",
+  "description": "Sitio web de Bitesua Home Bakery - Pastelería artesanal",
+  "scripts": {
+    "server": "node scripts/setup-server.js",
+    "lighthouse": "node scripts/lighthouse.js",
+    "axe": "node scripts/axe.js",
+    "screenshots": "node scripts/take-screenshots.js",
+    "test:all": "npm run lighthouse && npm run axe",
+    "test:complete": "npm run lighthouse && npm run axe && npm run screenshots"
+  },
+  "keywords": [
+    "bakery",
+    "pastelería",
+    "accesibilidad",
+    "lighthouse",
+    "axe"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lighthouse": "^11.7.1",
+    "@axe-core/puppeteer": "^4.10.0",
+    "puppeteer": "^21.11.0",
+    "chrome-launcher": "^1.1.0"
+  }
+}
+

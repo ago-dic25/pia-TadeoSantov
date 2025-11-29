@@ -1,0 +1,662 @@
+/* ---------------------- */
+/*       ESTILOS BASE     */
+/* ---------------------- */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f1f1;
+    overflow-x: hidden; /* Previene scroll horizontal */
+}
+
+/* Asegurar que todas las imágenes sean responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 40px 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section {
+        padding: 30px 10px;
+    }
+}
+
+/* ---------------------- */
+/*         NAVBAR         */
+/* ---------------------- */
+
+.navbar {
+    padding: 15px 40px;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.imagen_logo {
+    height: 45px;
+    width: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #000;
+    font-size: 14px;
+    font-style: italic;
+    transition: 0.3s;
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #b13b55;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* ---------------------- */
+/*        CARRUSEL        */
+/* ---------------------- */
+
+.producto {
+    background: #ffffff;
+    padding: 0;
+}
+
+/* Estilos para el carousel de Bootstrap */
+.carousel-item img {
+    object-fit: cover;
+}
+
+.carousel-img-responsive {
+    height: 100vh;
+    object-fit: cover;
+}
+
+@media (max-width: 992px) {
+    .carousel-img-responsive {
+        height: 70vh;
+        min-height: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-img-responsive {
+        height: 60vh;
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-img-responsive {
+        height: 50vh;
+        min-height: 300px;
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(177, 59, 85, 0.5);
+    border-radius: 50%;
+}
+
+.carousel-indicators button {
+    background-color: #b13b55;
+}
+
+/* ---------------------- */
+/*    OTRAS SECCIONES     */
+/* ---------------------- */
+
+.producto2,
+.sucursal-img,
+.mapa {
+    background: #d9e2d3;
+}
+
+.nosotros {
+    background: #ffffff;
+    padding-top: 20px;
+}
+.menus {
+    background: #ffd7e0;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    min-height: auto;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .menus {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menus {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.contacto {
+    background: #bfdcff;
+}
+
+.color_about {
+  color: #b13b55;
+}
+
+.color_descarga {
+  color: #b13b55;
+}
+
+.img_bakery {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10%;
+}
+
+@media (max-width: 576px) {
+    .img_bakery {
+        max-width: 100%;
+        border-radius: 5%;
+    }
+}
+
+.text_about {
+    max-width: 700px;       /* Limita el ancho del texto para que no se vea demasiado largo */
+    margin: 40px auto;      /* Centra el texto horizontalmente y da espacio vertical */
+    text-align: center;     /* Centra el texto */
+    line-height: 1.8;       /* Aumenta el espacio entre líneas */
+    font-size: 18px;        /* Tamaño de texto elegante */
+    color: #b13b55;         /* Color suave parecido al de la página que mostraste */
+    font-weight: 300;       /* Letra delgada y moderna */
+}
+
+@media (max-width: 768px) {
+    .text_about {
+        font-size: 16px;
+        line-height: 1.6;
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .text_about {
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+}
+
+/* BOTONES */
+
+.menu_buttons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .menu_buttons {
+        gap: 15px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .menu_buttons {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+}
+
+.menu-btn {
+    border: 2px solid #b13b55;
+    color: #b13b55;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.menu-btn:hover {
+    background-color: #b13b55;
+    color: #fff;
+    border-color: #b13b55;
+}
+
+/* Botones de Bootstrap personalizados */
+.btn-outline-danger {
+    border-color: #b13b55;
+    color: #b13b55;
+}
+
+.btn-outline-danger:hover {
+    background-color: #b13b55;
+    border-color: #b13b55;
+}
+
+.btn-danger {
+    background-color: #b13b55;
+    border-color: #b13b55;
+}
+
+.btn-danger:hover {
+    background-color: #8d2e44;
+    border-color: #8d2e44;
+}
+
+
+/* BOTONES */
+
+/* PALABRA CLICK*/
+
+.download-link {
+    color: #a22f4a;     /* color normal */
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.download-link:hover {
+    color: #11254e;     /* color al pasar mouse */
+}
+
+/* PALABRA CLICK */
+
+/* ---------------------- */
+/*      COMPONENTES       */
+/* ---------------------- */
+
+/* Cards personalizadas */
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15) !important;
+}
+
+.card-img-top {
+    transition: transform 0.3s ease;
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* Accordion personalizado */
+.accordion-button {
+    background-color: #f8f9fa;
+    color: #b13b55;
+    font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #b13b55;
+    color: white;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(177, 59, 85, 0.25);
+}
+
+/* Formularios */
+.form-control:focus,
+.form-select:focus {
+    border-color: #b13b55;
+    box-shadow: 0 0 0 0.25rem rgba(177, 59, 85, 0.25);
+}
+
+/* Validación de formularios */
+.was-validated .form-control:valid,
+.was-validated .form-select:valid {
+    border-color: #198754;
+}
+
+.was-validated .form-control:invalid,
+.was-validated .form-select:invalid {
+    border-color: #dc3545;
+}
+
+.was-validated .form-check-input:valid {
+    border-color: #198754;
+}
+
+.was-validated .form-check-input:invalid {
+    border-color: #dc3545;
+}
+
+/* Estilos para campos requeridos */
+.form-label .text-danger {
+    font-weight: bold;
+}
+
+/* Contador de caracteres */
+small.text-muted {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+}
+
+/* Alertas personalizadas */
+.alert {
+    border-radius: 0.5rem;
+}
+
+.alert-success {
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+    color: #0f5132;
+}
+
+/* Spinner en botones */
+.spinner-border-sm {
+    width: 1rem;
+    height: 1rem;
+    border-width: 0.15em;
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Etiquetas semánticas */
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-top: 0.5rem;
+}
+
+article {
+    margin-bottom: 2rem;
+}
+
+/* ---------------------- */
+/*      RESPONSIVE        */
+/* ---------------------- */
+
+/* Carousel responsive */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 60vh !important;
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-item img {
+        height: 50vh !important;
+        min-height: 300px;
+    }
+    
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .carousel-indicators {
+        margin-bottom: 10px;
+    }
+    
+    .carousel-indicators button {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+/* Navbar responsive */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 12px 20px;
+    }
+    
+    .navbar-nav .nav-link {
+        margin: 5px 0;
+        padding: 8px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+    
+    .imagen_logo {
+        height: 35px;
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 13px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        padding: 8px 10px;
+    }
+    
+    .imagen_logo {
+        height: 30px;
+    }
+}
+
+/* Títulos responsive */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    h5 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h5 {
+        font-size: 1rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+}
+
+/* Cards responsive */
+@media (max-width: 992px) {
+    .card-img-top {
+        height: 200px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 180px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-img-top {
+        height: 150px !important;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .card-title {
+        font-size: 1rem;
+    }
+    
+    .card-text {
+        font-size: 0.875rem;
+    }
+}
+
+/* Formularios responsive */
+@media (max-width: 768px) {
+    .form-label {
+        font-size: 0.95rem;
+    }
+    
+    .form-control,
+    .form-select {
+        font-size: 16px; /* Previene zoom en iOS */
+    }
+}
+
+@media (max-width: 576px) {
+    .card-body.p-4 {
+        padding: 1.5rem !important;
+    }
+    
+    .btn-lg {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* Accordion responsive */
+@media (max-width: 576px) {
+    .accordion-button {
+        font-size: 0.9rem;
+        padding: 0.75rem 1rem;
+    }
+    
+    .accordion-body {
+        font-size: 0.875rem;
+        padding: 1rem;
+    }
+}
+
+/* Figcaption responsive */
+@media (max-width: 768px) {
+    figcaption {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 576px) {
+    figcaption {
+        font-size: 0.7rem;
+    }
+}
+
+/* Skip link responsive */
+@media (max-width: 576px) {
+    .visually-hidden-focusable {
+        font-size: 0.875rem;
+        padding: 0.5rem;
+    }
+}
+
+/* Mapa responsive */
+@media (max-width: 768px) {
+    .ratio-16x9 {
+        --bs-aspect-ratio: 75%;
+    }
+}
+
+@media (max-width: 576px) {
+    .ratio-16x9 {
+        --bs-aspect-ratio: 66.66%;
+    }
+}
+
+/* Footer responsive */
+@media (max-width: 768px) {
+    footer .row > div {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Botones responsive */
+@media (max-width: 576px) {
+    .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .d-grid .btn {
+        margin-bottom: 0;
+    }
+}
+
+/* Espaciado general responsive */
+@media (max-width: 768px) {
+    .py-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    .mb-5 {
+        margin-bottom: 2rem !important;
+    }
+    
+    .mb-4 {
+        margin-bottom: 1.5rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    .mb-5 {
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .mb-4 {
+        margin-bottom: 1rem !important;
+    }
+    
+    .mb-3 {
+        margin-bottom: 0.75rem !important;
+    }
+}
